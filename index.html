@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dileep Veeraa — Product & Project Management Portfolio</title>
+  <meta name="description" content="Portfolio of Dileep Veeraa — Project & Product Management internship candidate. Case studies, PRDs, project plans and contact." />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Dileep Veeraa home">
+        <span class="logo-mark" aria-hidden="true">DV</span>
+        <span class="brand-text">Dileep Veeraa</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn small" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-pressed="false" title="Toggle theme">🌓</button>
+        <button id="nav-toggle" class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="eyebrow">Product & Project Management • Aspiring Intern</p>
+          <h1>Hi — I'm <span class="accent">Dileep</span>. I build clarity around products & projects.</h1>
+          <p class="lead">Final-year Chemical Engineering student with hands-on experience running campus projects, creating PRDs, and shipping mock product iterations. I bridge technical execution & user-focused product decisions.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="assets/resume.pdf" target="_blank" class="btn ghost">Download Resume</a>
+          </div>
+          <div class="badges">
+            <span class="chip">Google Project Mgmt</span>
+            <span class="chip">Agile / Scrum</span>
+            <span class="chip">Figma / Wireframes</span>
+            <span class="chip">SQL basics</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- Mock browser card -->
+          <div class="mock-card" aria-hidden="true">
+            <div class="mock-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="mock-content">
+              <h3>Featured — Agile Case Study</h3>
+              <p>Backlog, sprint planning & Kanban board for a campus app — reduced delivery cycle by 15% in simulation.</p>
+              <div class="mock-meta">
+                <small>Role: Product Owner</small>
+                <small>Tools: Jira, Figma</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <div class="split">
+        <div>
+          <h2>About Me</h2>
+          <p>I combine a technical foundation with product-thinking: defining problems, prioritizing features, and ensuring projects run on time. I led a 100-person team for a college farewell (₹1.8L budget) and created multiple classroom product case studies.</p>
+
+          <ul class="stats">
+            <li><strong>100+</strong><span>Team members coordinated</span></li>
+            <li><strong>₹1.8L</strong><span>Budget managed</span></li>
+            <li><strong>3+</strong><span>Product case studies</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Skills</h3>
+          <ul class="skills">
+            <li><span>Product Strategy</span><progress value="75" max="100"></progress></li>
+            <li><span>Project Planning</span><progress value="85" max="100"></progress></li>
+            <li><span>Stakeholder Mgmt</span><progress value="80" max="100"></progress></li>
+            <li><span>Wireframing (Figma)</span><progress value="70" max="100"></progress></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects container">
+      <h2>Selected Projects</h2>
+      <p class="muted">Short case studies demonstrating product thinking, execution & outcomes.</p>
+
+      <div class="project-grid">
+        <!-- Project card 1 -->
+        <article class="project-card" tabindex="0"
+                 data-title="Agile Case Study — Campus App"
+                 data-desc="Created backlog, user stories and ran 2 mock sprints using Kanban. Prioritized features using RICE and validated assumptions with 50 user interviews."
+                 data-tags="Agile, PRD, User Research"
+                 data-link="#">
+          <div class="project-media"></div>
+          <div class="project-body">
+            <h3>Agile Case Study — Campus App</h3>
+            <p class="muted">Backlog, sprint plan, Kanban & MVP definition.</p>
+            <div class="project-meta">
+              <span class="tag">Agile</span>
+              <span class="tag">Research</span>
+              <button class="btn small btn-details">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project card 2 -->
+        <article class="project-card" tabindex="0"
+                 data-title="Farewell Event — End-to-End Planning"
+                 data-desc="Led a 100-member team, managed a ₹1.8L budget, negotiated vendors and reduced costs by 10% while delivering the event on schedule."
+                 data-tags="Budget, Leadership, Vendor Mgmt"
+                 data-link="#">
+          <div class="project-media"></div>
+          <div class="project-body">
+            <h3>Farewell Event — End-to-End Planning</h3>
+            <p class="muted">Team leadership, procurement & delivery.</p>
+            <div class="project-meta">
+              <span class="tag">Ops</span>
+              <span class="tag">Coordination</span>
+              <button class="btn small btn-details">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project card 3 -->
+        <article class="project-card" tabindex="0"
+                 data-title="PRD — Campus Marketplace"
+                 data-desc="Wrote a full Product Requirement Document including user personas, acceptance criteria, and prioritised roadmap for a student marketplace MVP."
+                 data-tags="PRD, Prioritization, UX"
+                 data-link="#">
+          <div class="project-media"></div>
+          <div class="project-body">
+            <h3>PRD — Campus Marketplace</h3>
+            <p class="muted">PRD, user stories & prioritization.</p>
+            <div class="project-meta">
+              <span class="tag">Product</span>
+              <span class="tag">PRD</span>
+              <button class="btn small btn-details">Details</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROCESS / ARTIFACTS -->
+    <section id="process" class="section container">
+      <h2>How I work</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h4>Discover</h4>
+          <p>Problem framing, stakeholder interviews, user research & metrics.</p>
+        </div>
+        <div class="card">
+          <h4>Define</h4>
+          <p>Personas, PRDs, acceptance criteria & prioritisation (RICE).</p>
+        </div>
+        <div class="card">
+          <h4>Deliver</h4>
+          <p>Sprint planning, Kanban, stakeholder communication & retrospectives.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section container">
+      <h2>Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert">Google Project Management • Coursera</div>
+        <div class="cert">Lean Management Fundamentals</div>
+        <div class="cert">High Performance Leadership (Formula 1)</div>
+        <div class="cert">Agile with Jira</div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container contact-section">
+      <h2>Contact</h2>
+      <p class="muted">Open to internship opportunities — I respond within a few days.</p>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-grid">
+          <label>
+            <span>Full name</span>
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </label>
+          <label class="full">
+            <span>Message</span>
+            <textarea name="message" rows="5" required placeholder="Brief message / role you are hiring for"></textarea>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn" type="submit">Send message</button>
+          <div id="form-status" aria-live="polite" class="form-status" hidden></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="cur-year"></span> Dileep Veeraa</div>
+      <div class="socials">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      <h3 id="modal-title">Project title</h3>
+      <p id="modal-desc">Project description</p>
+      <p id="modal-tags" class="muted"></p>
+      <a id="modal-link" class="btn ghost" href="#" target="_blank" rel="noopener">View artifact</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
