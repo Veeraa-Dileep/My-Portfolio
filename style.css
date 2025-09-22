@@ -473,6 +473,11 @@ h1{
   background-size: cover;
   background-position: center;
 }
+#p4{
+  background-image: url('static/Cover4.png');
+  background-size: cover;
+  background-position: center;
+}
 
 /* certs */
 .cert-grid{
