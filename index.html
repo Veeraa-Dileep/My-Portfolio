@@ -8,13 +8,18 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="static/letter-d.png">
+  <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 </head>
 <body>
   <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="#hero" aria-label="Dileep Veeraa home">
-      <span class="logo-mark" aria-hidden="true">DV</span>
+      <span class="logo-mark" aria-hidden="true">
+        <img src="static/icon.png" alt="" aria-hidden="true">
+      </span>
       <span class="brand-text">Dileep Veeraa</span>
     </a>
 
@@ -23,10 +28,10 @@
 
     <nav class="main-nav" id="main-nav" aria-label="Main navigation">
       <ul class="nav-list">
-        <li><a href="#hero">About</a></li>
         <li><a href="#skills-section">Skills</a></li>
-        <li><a href="#initiatives-section">Internship</a></li>
-        <li><a href="#projects">Projects</a></li>          
+        <li><a href="#experience-section">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact-section">Contact</a></li>
       </ul>
@@ -41,14 +46,9 @@
     <section id="hero" class="hero">
       <div class="container hero-grid">
         <div class="hero-left">
-          <p class="eyebrow">Project Management • Aspiring Intern</p>
+          <p class="eyebrow">Project Management • Aspiring Project Manager</p>
           <h2>Hi — I'm <span class="accent">Dileep</span>, Driven to collaborate, innovate, and manage impactful projects.</h2>
-          <p class="lead">I’m an aspiring Project Management professional with hands-on experience in leading campus initiatives,
-             coordinating large-scale events, and driving cross-functional collaboration. Alongside my management skills, I bring a strong 
-             foundation in web development, which helps me bridge the gap between technical execution and business strategy.
-              My certifications in project, agile, and leadership management, combined with real-world experience in event coordination and team leadership,
-               reflect my ability to deliver structured, impactful solutions. I’m passionate about solving real problems, creating scalable processes, and 
-               continuously learning to add value to fast-paced, innovative teams.</p>
+          <p class="lead">I'm an aspiring Project Manager with real-world experience in marketing operations, stakeholder coordination, and process improvement at a fast-paced tech startup. I combine a strong technical foundation — including web development — with a strategic mindset to solve complex challenges. My certifications in project, agile, and product management, paired with hands-on internship experience driving measurable results, reflect my ability to deliver structured, impactful solutions. I'm passionate about solving real problems, creating scalable processes, and continuously learning to add value to fast-paced, innovative teams.</p>
           <div class="hero-cta">
             <a href="#projects" class="btn">View Projects</a>
             <a href="static/dileep_veeraa_resume.pdf" target="_blank" class="btn ghost">Download Resume</a>
@@ -95,8 +95,9 @@
     <div class="skills-card">
       <h3>Technical Skills & Tools</h3>
       <ul>
-        <li>Pyngyn</li>
+        <li>Google Workspace (Docs, Sheets, Gmail, Drive, Meet)</li>
         <li>CRM Systems</li>
+        <li>Pyngyn (internal PM tool)</li>
         <li>Asana, Jira</li>
         <li>Microsoft Excel, Google Sheets</li>
         <li>Microsoft Project, Power BI</li>
@@ -122,22 +123,22 @@
 </section>
 
 
-    <!-- INTERNSHIP EXPERIENCE -->
-<section id="initiatives-section" class="section container">
-  <h2>Internship Experience</h2>
-  <p class="muted">Hands-on project management, process optimization, and growth operations experience.</p>
+    <!-- EXPERIENCE -->
+<section id="experience-section" class="section container">
+  <h2>Experience</h2>
+  <p class="muted">Project management internship driving process improvements, cross-functional coordination, and measurable business outcomes.</p>
 
   <div id="initiatives-grid">
     <div class="initiative-card">
       <h3>Project Management Intern — Pyngyn</h3>
-      <p><strong>Dec 2025 – Mar 2026 | Remote</strong><br>
-        Coordinated cross-functional teams and managed stakeholder communication using Pyngyn’s proprietary PM tool to track tasks and support on-time delivery.</p>
+      <p><strong>Dec 2025 – Apr 2026 | Remote</strong></p>
+      <ul class="experience-bullets">
+        <li>Kept 5+ projects on schedule across 3 cross-functional teams by tracking deliverables in Pyngyn's internal PM tool, reducing missed handoffs by 30%.</li>
+        <li>Streamlined the user sign-up workflow by automating manual data entry, reducing processing time by 40% and enabling the team to handle 50+ additional sign-ups per week.</li>
+        <li>Replaced manual spreadsheet tracking with a custom CRM built from scratch, centralizing all leads and reducing follow-up time from 15 minutes to under 5 minutes per lead.</li>
+        <li>Grew social media engagement by 40% over 3 months by executing 20+ targeted campaigns, informed by ongoing market research.</li>
+      </ul>
     </div>
-
-    <div class="initiative-card">
-      <h3>Key Contributions</h3>
-      <p>Designed end-to-end sales and marketing workflows for user signup handling, built a fully functional CRM system from scratch for structured lead and client management, and executed social media management, campaign planning, and market research to support growth objectives.</p>
-   </div>
 </section>
 
 
@@ -230,7 +231,7 @@
     </div>
   </div>
 
- 
+
     <!-- CERTIFICATIONS -->
     <section id="certifications" class="section container">
       <h2>Certifications</h2>
@@ -250,11 +251,11 @@
             <span class="chip">Stakeholder communication</span>
             <span class="chip">Budgeting and cost control</span>
             <span class="chip">Project documentation</span>
-          </div> 
+          </div>
         </div>
-        
+
         <div class="cert">
-          <h3>Product Management Professional Certificate • LinkedIn Learning </h3> 
+          <h3>Product Management Professional Certificate • LinkedIn Learning </h3>
           <div style="display: inline-flex;">
             <h4>Credintial-ID: 875edffd8ce30.....</h4>
             <a href="https://www.linkedin.com/learning/certificates/875edffd8ce3044c7f6c3248c643d188e730b8785e3834ea50de04e1c72a817b" style="margin: auto 15px;" target="_blank">
@@ -270,7 +271,7 @@
         </div>
 <!--
       <div class="cert">
-          <h3>IBM Full Stack Software Developer • IBM - Coursera</h3> 
+          <h3>IBM Full Stack Software Developer • IBM - Coursera</h3>
           <div style="display: inline-flex;">
             <h4>Credintial-ID: --</h4>
             <a href="#" style="margin: auto 15px;" target="_blank">
@@ -283,7 +284,7 @@
             <span class="chip">Databases (SQL, NoSQL, MongoDB)</span>
             <span class="chip">Python (data & backend scripts)</span>
           </div>
-        </div> 
+        </div>
 -->
 
 
@@ -370,6 +371,24 @@
       </div>
     </section>
 
+  <!-- EDUCATION -->
+  <section id="education" class="section container">
+    <h2>Education</h2>
+    <p class="muted">Academic background in engineering with a strong analytical and problem-solving foundation.</p>
+    <div id="education-grid">
+      <div class="edu-card">
+        <h3>B.Tech Chemical Engineering</h3>
+        <p><strong>Rajiv Gandhi University of Knowledge Technologies (RGUKT)</strong> — Nuzvid</p>
+        <p class="edu-date">2022 – May 2026</p>
+      </div>
+      <div class="edu-card">
+        <h3>Pre University Course, M.P.C</h3>
+        <p><strong>Rajiv Gandhi University of Knowledge Technologies (RGUKT)</strong> — Ongole</p>
+        <p class="edu-date">2022</p>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section id="contact-section" class="section container">
     <h2>Contact</h2>
@@ -377,15 +396,15 @@
 
     <div id="contact-details">
       <div class="contact-card">
-        <strong>Email:</strong> 
+        <strong>Email:</strong>
         <a href="mailto:dileepveeraa@gmail.com">dileepveeraa@gmail.com</a>
       </div>
       <div class="contact-card">
-        <strong>Phone:</strong> 
+        <strong>Phone:</strong>
         <a href="tel:+919493308833">+91 94933 08833</a>
       </div>
       <div class="contact-card">
-        <strong>LinkedIn:</strong> 
+        <strong>LinkedIn:</strong>
         <a href="https://www.linkedin.com/in/veeraadileep/" target="_blank">https://www.linkedin.com/in/veeraadileep/</a>
       </div>
       <div class="contact-card">
@@ -407,8 +426,8 @@
     </div>
   </footer>
 
- 
-  
+
+
 
   <script src="script.js"></script>
 </body>

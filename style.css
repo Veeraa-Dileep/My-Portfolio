@@ -132,12 +132,20 @@ button:focus-visible{
   border-radius:12px;
   display:grid;
   place-items:center;
+  overflow:hidden;
   font-weight:700;
   font-size:0.98rem;
   color:var(--accent);
   background:linear-gradient(155deg, #211b0f, #131313);
   border:1px solid var(--border);
   box-shadow:0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.logo-mark img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:inherit;
 }
 
 .brand-text{
@@ -355,6 +363,31 @@ button:focus-visible{
   color:var(--text);
 }
 
+.initiative-card .experience-bullets{
+  list-style:none;
+  margin:0.6rem 0 0;
+  padding:0;
+}
+
+.initiative-card .experience-bullets li{
+  position:relative;
+  padding:0.4rem 0 0.4rem 1.2rem;
+  color:var(--text);
+  font-size:0.95rem;
+  border-bottom:1px solid var(--border-soft);
+}
+
+.initiative-card .experience-bullets li:last-child{
+  border-bottom:none;
+}
+
+.initiative-card .experience-bullets li::before{
+  content:"\25B8";
+  position:absolute;
+  left:0;
+  color:var(--gold-warm);
+}
+
 .project-media{
   height:152px;
   border-bottom:1px solid var(--border-soft);
@@ -468,25 +501,25 @@ button:focus-visible{
 }
 
 #p1{
-  background-image:url("static/Cover1.jpg");
+  background-image:url("static/Cover1.webp");
   background-size:cover;
   background-position:center;
 }
 
 #p2{
-  background-image:url("static/Cover2.jpg");
+  background-image:url("static/Cover2.webp");
   background-size:cover;
   background-position:center;
 }
 
 #p3{
-  background-image:url("static/Cover3.jpg");
+  background-image:url("static/Cover3.webp");
   background-size:cover;
   background-position:center;
 }
 
 #p4{
-  background-image:url("static/Cover4.png");
+  background-image:url("static/Cover4.webp");
   background-size:cover;
   background-position:center;
 }
@@ -503,6 +536,54 @@ button:focus-visible{
   font-size:0.88rem;
   font-family:"Manrope","Segoe UI",sans-serif;
   font-weight:600;
+}
+
+#education-grid{
+  display:grid;
+  grid-template-columns:repeat(12, minmax(0, 1fr));
+  gap:1rem;
+}
+
+.edu-card{
+  grid-column:span 6;
+  border:1px solid var(--border);
+  border-radius:var(--radius-md);
+  padding:1.05rem 1.15rem;
+  background:linear-gradient(180deg, rgba(26, 26, 26, 0.96), rgba(17, 17, 17, 0.94));
+  box-shadow:var(--shadow-soft);
+  transition:transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease, background-color 0.24s ease;
+}
+
+.edu-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(212, 173, 92, 0.55);
+  background:linear-gradient(180deg, var(--black-hover), rgba(17, 17, 17, 0.96));
+  box-shadow:var(--shadow-strong);
+}
+
+.edu-card h3{
+  margin:0 0 0.3rem;
+  font-size:1.28rem;
+  color:var(--heading);
+}
+
+.edu-card p{
+  margin:0;
+  color:var(--text);
+  font-size:0.95rem;
+}
+
+.edu-card .edu-date{
+  margin-top:0.2rem;
+  color:var(--gold-warm);
+  font-size:0.88rem;
+  font-weight:600;
+}
+
+@media (max-width: 700px){
+  .edu-card{
+    grid-column:1 / -1;
+  }
 }
 
 #contact-details{
